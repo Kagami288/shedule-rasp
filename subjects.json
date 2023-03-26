@@ -1,0 +1,68 @@
+{
+    "1": {
+        "name": "Математика",
+        "rang": 8,
+        "hours": 5,
+        "isLetter": true
+    },
+    "2": {
+        "name": "Русский",
+        "rang": 7,
+        "hours": 4,
+        "isLetter":true
+    },
+    "3": {
+        "name": "Английский",
+        "rang": 7,
+        "hours": 1,
+        "isLetter":true
+    },
+    "4": {
+        "name": "Природоведение",
+        "rang": 6,
+        "hours": 2,
+        "isLetter":true
+    },
+    "5": {
+        "name": "Информатика",
+        "rang": 6,
+        "hours": 1,
+        "isLetter":true
+    },
+    "7": {
+        "name": "Литература",
+        "rang": 5,
+        "hours": 4,
+        "isLetter":true
+    },
+    "8": {
+        "name": "История",
+        "rang": 4,
+        "hours": 1,
+        "isLetter":true
+    },
+    "9": {
+        "name": "Рисование",
+        "rang": 3,
+        "hours": 1,
+        "isLetter":true
+    },
+    "10": {
+        "name": "Музыка",
+        "rang": 3,
+        "hours": 1,
+        "isLetter":false
+    },
+    "11": {
+        "name": "Труд",
+        "rang": 2,
+        "hours": 1,
+        "isLetter":false
+    },
+    "12":{
+      "name": "Физическая культура",
+      "rang":1,
+      "hours":3,
+      "isLetter":false
+      }
+}
