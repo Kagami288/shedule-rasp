@@ -20,7 +20,7 @@
     "4": {
         "name": "Природоведение",
         "rang": 6,
-        "hours": 2,
+        "hours": 1,
         "isLetter":true
     },
     "5": {
@@ -32,7 +32,7 @@
     "7": {
         "name": "Литература",
         "rang": 5,
-        "hours": 4,
+        "hours": 1,
         "isLetter":true
     },
     "8": {
@@ -62,7 +62,7 @@
     "12":{
       "name": "Физическая культура",
       "rang":1,
-      "hours":3,
+      "hours":1,
       "isLetter":false
       }
 }
