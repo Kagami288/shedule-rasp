@@ -71,55 +71,57 @@ def check_study(week):
         if len(day) == 5:
             return False
     return True
-a=0
-for sub in subjects_o:
-    a = a + subjects_o[sub]['hours']
-print(a)
-# it = 0
-# check = False
-# while check == False:
-#     subjects = copy.deepcopy(subjects_o)
-#     it = it + 1
-#     print("Итерация: ", it)
-#     for day in week:
-#         num = random.randint(5,6)
-#         if check_study(week):
-#             num = 5
-#         for i in range(num):
-#             for key in subjects:
-#                 if subjects[key].get('hours')==len(week):
-#                     week[day].append(subjects[key]['name'])
-#                     subjects[key]['hours'] = subjects[key].get('hours') - 1
-#                     break
-#                 local_check = False
-#                 if i == len(week[day]):
-#                     break
-#                 while local_check == False:
-#                     if i == len(week[day]):
-#                         break
-#                     rand_sub = random.choice(list(subjects.keys()))
-#                     if subjects[rand_sub]['hours'] != 0:
-#                         week[day].append(subjects[rand_sub]['name'])
-#                         subjects[rand_sub]['hours'] = subjects[rand_sub].get('hours') - 1
-#                         local_check = True
-#                         break
-#     sum_rang = 0
-#     for day in week:
-#         sum_rang = 0
-#         for num in week[day]:
-#             for sub in subjects:
-#                 if num == subjects[sub]['name']:
-#                     sum_rang = sum_rang + subjects[sub]['rang']
-#                     week_rang[day] = sum_rang
-#     if week_rang['Понедельник'] and week_rang['Пятница'] < week_rang['Вторник'] < week_rang['Среда'] and week_rang['Четверг']:
-#         print("Расписание готово")
-#         check = True
-#     else:
-#         check = False
-#         week = copy.deepcopy(week_o)
-#         week_rang = copy.deepcopy(week)
 
-# for day in week:
-#     print(day + ":")
-#     for num in week[day]:
-#         print(" - " + num)
+# a=0
+# for sub in subjects_o:
+#     a = a + subjects_o[sub]['hours']
+# print(a)
+
+it = 0
+check = False
+while check == False:
+    subjects = copy.deepcopy(subjects_o)
+    it = it + 1
+    print("Итерация: ", it)
+    for day in week:
+        num = random.randint(5,6)
+        if check_study(week):
+            num = 5
+        for i in range(num):
+            for key in subjects:
+                if subjects[key].get('hours')==len(week):
+                    week[day].append(subjects[key]['name'])
+                    subjects[key]['hours'] = subjects[key].get('hours') - 1
+                    break
+                local_check = False
+                if i == len(week[day]):
+                    break
+                while local_check == False:
+                    if i == len(week[day]):
+                        break
+                    rand_sub = random.choice(list(subjects.keys()))
+                    if subjects[rand_sub]['hours'] != 0:
+                        week[day].append(subjects[rand_sub]['name'])
+                        subjects[rand_sub]['hours'] = subjects[rand_sub].get('hours') - 1
+                        local_check = True
+                        break
+    sum_rang = 0
+    for day in week:
+        sum_rang = 0
+        for num in week[day]:
+            for sub in subjects:
+                if num == subjects[sub]['name']:
+                    sum_rang = sum_rang + subjects[sub]['rang']
+                    week_rang[day] = sum_rang
+    if week_rang['Понедельник'] and week_rang['Пятница'] < week_rang['Вторник'] < week_rang['Среда'] and week_rang['Четверг']:
+        print("Расписание готово")
+        check = True
+    else:
+        check = False
+        week = copy.deepcopy(week_o)
+        week_rang = copy.deepcopy(week)
+
+for day in week:
+    print(day + ":")
+    for num in week[day]:
+        print(" - " + num)
